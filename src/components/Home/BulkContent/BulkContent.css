@@ -1,0 +1,47 @@
+.bulk-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 5% 0px;
+  grid-template-areas:
+    "bulk-header"
+    "bulk-body"
+    "bulk-footer";
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bulk-header {
+  grid-area: bulk-header;
+}
+
+.bulk-header h6 {
+  margin: 0;
+}
+
+.bulk-body {
+  grid-area: bulk-body;
+  text-align: left;
+}
+
+.bulk-footer {
+  grid-area: bulk-footer;
+}
+.bulk-footer > button:active {
+  top: 0em;
+}
+
+article.bulk-body {
+  -webkit-columns: 3 200px;
+  -moz-columns: 3 200px;
+  columns: 3 200px;
+  -webkit-column-gap: 4em;
+  -moz-column-gap: 4em;
+  column-gap: 4em;
+}
+
+@media only screen and (max-width: 30em) {
+  .bulk-footer > button {
+    width: 100%;
+  }
+}

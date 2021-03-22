@@ -1,0 +1,148 @@
+.content {
+  padding: 3rem 0;
+}
+.content-image {
+  max-height: 100%;
+  max-width: 100%;
+  padding: "auto";
+  display: "block";
+}
+
+.body-order-1 ul {
+  padding-inline-start: 20px;
+}
+
+.header-order-1,
+.body-order-1,
+.footer-order-1 {
+  text-align: left;
+}
+.content-order-1 {
+  padding: 1rem;
+}
+.content-order-2 {
+  margin: 1rem;
+}
+
+.header-order-1 h3 {
+  margin: 0;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5%s 0px;
+  grid-template-areas:
+    "content-order-2"
+    "content-order-1";
+}
+
+.content-order-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header-order-1"
+    "body-order-1"
+    "footer-order-1";
+  grid-area: content-order-1;
+}
+
+.header-order-1 {
+  grid-area: header-order-1;
+}
+
+.body-order-1 {
+  grid-area: body-order-1;
+}
+
+.footer-order-1 {
+  grid-area: footer-order-1;
+}
+
+.content-order-2 {
+  grid-area: content-order-2;
+}
+
+.office-background {
+  background-image: url("../../../images/shutterstock_696636415.jpg");
+  background-size: cover;
+}
+
+.sunglasses-2-background {
+  background-image: url("../../../images/shutterstock_1302552622.jpg");
+  background-size: cover;
+  background-position-x: right;
+}
+
+.grey-box {
+  opacity: 80%;
+  background-color: grey;
+  color: white;
+}
+
+@media only screen and (min-width: 30em) {
+  .content-container.content.sunglasses-2-background {
+    display: grid;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 5%;
+  }
+
+  .content-order-1 {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+
+  .content-order-2 {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+
+  .content-header-area {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .content-body-area {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .content-footer-area {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .header-order-2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .header-order-1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .body-order-1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .body-order-2 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .footer-order-1 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .footer-order-2 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .content.sunglasses-2-background .content-container {
+    display: block;
+    padding: 1;
+  }
+}
