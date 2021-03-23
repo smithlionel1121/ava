@@ -24,9 +24,7 @@ export default function Nav() {
             <Link to="/contact">CONTACT US</Link>
           </li>
 
-          <Link to="/contact">
-            <button>Log In</button>
-          </Link>
+          <button>Log In</button>
         </ul>
       </div>
     </nav>
