@@ -1,0 +1,19 @@
+.about-content {
+  text-align: left;
+}
+
+.about-image {
+  min-height: 30vh;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  /* background-position-x: center; */
+  background-position: center;
+}
+
+@media only screen and (min-width: 60em) {
+  .about-image {
+    max-width: 40vw;
+  }
+}

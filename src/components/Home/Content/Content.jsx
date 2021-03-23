@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Content.css";
 
 export default function Content({ backgroundImage, contentImage }) {
@@ -34,8 +35,10 @@ export default function Content({ backgroundImage, contentImage }) {
                 </li>
               </ul>
             </div>
-            <div className="footer-order-1" style={{ opacity: 1 }}>
-              <button>Learn more</button>
+            <div className="footer-order-1">
+              <Link to="about">
+                <button>Learn more</button>
+              </Link>
             </div>
           </div>
           <div className={`content-order-2 content-image ${contentImage}`} />

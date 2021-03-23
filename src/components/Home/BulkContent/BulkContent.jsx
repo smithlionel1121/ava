@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BulkContent.css";
 
 export default function BulkContent() {
@@ -58,7 +59,9 @@ export default function BulkContent() {
           </p>
         </article>
         <div className="bulk-footer">
-          <button>Contact Us</button>
+          <Link to="/contact">
+            <button>Contact Us</button>
+          </Link>
         </div>
       </div>
     </div>

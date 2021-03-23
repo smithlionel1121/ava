@@ -21,7 +21,6 @@ const Carousel = () => {
     const fetchData = async () => {
       let arr = [];
       const data = await getBannerDetails();
-      console.log(data);
       data?.Details?.forEach((element, idx) => {
         arr.push(
           <SwiperSlide key={`slide-${idx}`} tag="li" className="swiper-slide">
