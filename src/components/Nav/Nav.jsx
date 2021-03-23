@@ -23,6 +23,10 @@ export default function Nav() {
           <li>
             <Link to="/contact">CONTACT US</Link>
           </li>
+
+          <Link to="/contact">
+            <button>Log In</button>
+          </Link>
         </ul>
       </div>
     </nav>
