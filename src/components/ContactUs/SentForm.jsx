@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import "./ContactForm.css";
 
 function SentForm(props) {
-  if (!props.location.state?.apiResponse?.Status) {
+  if (props.location.state?.apiResponse?.Errors) {
     return (
       <div className="errors-res">
         {props.location.state?.apiResponse?.Errors?.map(err => (
